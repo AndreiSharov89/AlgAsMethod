@@ -28,17 +28,12 @@ namespace AlgAsMethod
             double root;
             Console.WriteLine("Enter num to get square root:");
             target = double.Parse(Console.ReadLine());
+
             root = SqareRoot(target);
-            //root = 1;
-            //double oldr;
-            //do
-            //{
-            //    oldr = root;
-            //    root = (root + target / root) / 2;
-            //}
-            //while (oldr != root);
 
             Console.WriteLine($"Your square root is: {root:F2}");
+            target = root * root;
+            Console.WriteLine($"Your first number was {target:F2}");
 
         }
     }
